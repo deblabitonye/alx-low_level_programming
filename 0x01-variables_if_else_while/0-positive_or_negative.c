@@ -13,8 +13,8 @@ n = rand() - RAND_MAX / 2;
 if (n > 0)
 printf("%d is positive\n", n);
 else if (n == 0)
-printf("% is 0\n", n);
+printf("%d is 0\n", n);
 else
-printf("% is n\n", n);
+printf("%d is n\n", n);
 return (0);
 }
