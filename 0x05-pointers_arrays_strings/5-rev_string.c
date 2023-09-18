@@ -1,11 +1,11 @@
 #include "main.h"
 /**
  * rev_string - Reverses a string
- * @s: Input string
- * Return: string in reverse
+ * @s: string to be reversed
+ * Return: void
  */
 void rev_string(char *s)
-[
+{
 int i;
 char j;
 int count = 0;
@@ -14,7 +14,7 @@ count++;
 for (i = 0; i < count / 2 ; i++)
 {
 j = s[i];
-s[i] = s[count] - 1 - i];
+s[i] = s[count - 1 - i];
 s[count - 1 - i] = j;
 }
 }
