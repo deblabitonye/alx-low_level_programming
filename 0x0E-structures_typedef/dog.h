@@ -9,6 +9,7 @@
  *
  * Description: longer description
  */
+
 struct dog
 {
 char *name;
