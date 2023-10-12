@@ -32,7 +32,7 @@ if (!str)
 str = "(nul)";
 printf("%s%s", sep, str);
 break;
-default;
+default:
 a++;
 continue;
 }
