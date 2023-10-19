@@ -6,8 +6,8 @@
 #include <string.h>
 
 /**
- * struct lists -singly linked lists
- * @str: string - (malloc ' ed string)
+ * struct lists - singly linked lists
+ * @str: string - (malloc'ed string)
  * @len: length of the string
  * *next: points to the next node
  *
