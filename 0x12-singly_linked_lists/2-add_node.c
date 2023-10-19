@@ -19,7 +19,7 @@ temp = malloc(sizeof(list_t));
 if (temp == NULL)
 return (NULL);
 while (str[length])
-length;
+length++;
 temp->len = length;
 temp->str = strdup(str);
 temp->next = *head;
