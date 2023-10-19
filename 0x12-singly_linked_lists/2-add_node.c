@@ -23,5 +23,6 @@ length;
 temp->len = length;
 temp->str = strdup(str);
 temp->next = *head;
+*head = temp;
 return (temp);
 }
