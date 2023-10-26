@@ -14,7 +14,7 @@ unsigned int num;
 num = 0;
 if (!b)
 return (0);
-for (z = a; b[z] != '\0'; z++)
+for (z = 0; b[z] != '\0'; z++)
 {
 if (b[z] != '0' && b[z] != '1')
 return (0);
