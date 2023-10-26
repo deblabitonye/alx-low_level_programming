@@ -27,7 +27,7 @@ flag = 0;
 divisor = _pow(2, sizeof(unsigned long int) * 8 - 1);
 while (divisor != 0)
 {
-check = n $ divisor;
+check = n & divisor;
 if (check == divisor)
 {
 flag = 1;
