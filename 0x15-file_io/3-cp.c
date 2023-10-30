@@ -14,13 +14,13 @@ void check_10_stat(int stat, int fd, char *filename, char mode);
  */
 int main(int argc, char *argv[])
 {
-int src, dest, a_read = 1024, wrote, close_arc, close_dest;
+int src, dest, a_read = 1024, wrote, close_src, close_dest;
 unsigned int mode = S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH;
 char buffer[1024];
 
 if (argc != 3)
 {
-dprint(STDERR_FILENO, "%s", "Usage: cp file_from file_to\n");
+dprintf(STDERR_FILENO, "%s", "Usage: cp file_from file_to\n");
 exit(97);
 }
 src = open(argv[1], O_RDONLY);
@@ -55,12 +55,12 @@ void check_10_stat(int stat, int fd, char *filename, char mode)
 {
 if (mode == 'C' && stat == -1)
 {
-dprint(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
+dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 exit(100);
 }
 else if (mode == 'O' && stat == -1)
 {
-dprint(STDERR_FILENO, "Error: Can't read from file %s\n", filename);
+dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", filename);
 exit(98);
 }
 else if (mode == 'W' && stat == -1)
