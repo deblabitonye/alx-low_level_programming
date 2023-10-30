@@ -22,7 +22,7 @@ if (file_a == -1)
 return (-1);
 if (text_content)
 {
-for (bletters = 0; text_content(bletters); bletters++)
+for (bletters = 0; text_content[bletters]; bletters++)
 ;
 rwr = write(file_a, text_content, bletters);
 if (rwr == -1)
